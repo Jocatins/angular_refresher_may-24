@@ -10,6 +10,8 @@ import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductAlertsComponent } from "./product-alerts/product-alerts.component";
 import { ProductDetailsComponent } from "./product-details/product-details.component";
 import { CartComponent } from "./cart/cart.component";
+import { FormsComponent } from "./forms/forms.component";
+import { ReactiveFormsComponent } from "./reactive-forms/reactive-forms.component";
 
 import { HttpClientModule } from "@angular/common/http";
 import { ShippingComponent } from "./shipping/shipping.component";
@@ -25,11 +27,15 @@ import { ShippingComponent } from "./shipping/shipping.component";
 			{ path: "products/:productId", component: ProductDetailsComponent },
 			{ path: "cart", component: CartComponent },
 			{ path: "shipping", component: ShippingComponent },
+			{ path: "form", component: FormsComponent },
+			{ path: "reactive", component: ReactiveFormsComponent },
 		]),
 		ProductAlertsComponent,
 		ProductDetailsComponent,
 		CartComponent,
 		ShippingComponent,
+		FormsComponent,
+		ReactiveFormsComponent,
 	],
 	declarations: [AppComponent, TopBarComponent, ProductListComponent],
 	bootstrap: [AppComponent],
